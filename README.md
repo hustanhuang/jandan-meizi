@@ -9,6 +9,7 @@ python3
 
 pip:
   beautifulsoup4
+  lxml
 ```
 
 ## 用法
