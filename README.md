@@ -27,7 +27,7 @@ python main.py [start_page] [end_page]
 然后下就行了
 
 ```bash
-wget -i urls --tries=1
+wget -i urls --tries=1 -nc
 ```
 
 ## 这样的恶俗工具随手一抓就是一大把
