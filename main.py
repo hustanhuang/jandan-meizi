@@ -31,9 +31,9 @@ def process():
 
         posts = Soup(raw, 'lxml').ol
         for post in posts.find_all("li"):
-            post = post.find("div", attrs={"class":"text"})
-            for img in post.find_all("img"):
-                img_urls.append(img["src"])
+            post = post.find("div", attrs={"class":"text"}).p
+            for img in post.find_all("a"):
+                img_urls.append(img["href"])
 
 downloader = Thread(target=download, args=(int(argv[1]), int(argv[2])))
 downloader.start()
