@@ -27,7 +27,13 @@ python main.py [start_page] [end_page]
 然后下就行了
 
 ```bash
-wget -i urls --tries=1 -nc
+wget -i urls --tries=1 --no-clobber
+```
+
+或者
+
+```bash
+aria2c -i urls --max-tries=1 --conditional-get=true
 ```
 
 ## 这样的恶俗工具随手一抓就是一大把
