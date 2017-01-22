@@ -1,4 +1,4 @@
-# jandan-mz
+# jandan-meizi
 
 爬[煎蛋妹子图](http://jandan.net/ooxx)的恶俗工具😃
 
