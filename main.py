@@ -33,7 +33,7 @@ def process():
         for post in posts.find_all("li"):
             post = post.find("div", attrs={"class":"text"}).p
             for img in post.find_all("a"):
-                img_urls.append(img["href"])
+                img_urls.append("http:" + img["href"])
 
 downloader = Thread(target=download, args=(int(argv[1]), int(argv[2])))
 downloader.start()
